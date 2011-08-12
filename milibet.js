@@ -49,5 +49,5 @@ function server(req, res) {
 if (process.argv.length > 2) {
     process.stdout.write(militerize(process.argv[2]));
 } else {
-    require('http').createServer(server).listen(port, "127.0.0.1");
+    require('http').createServer(server).listen(port);
 }
