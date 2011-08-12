@@ -35,7 +35,7 @@ function militerize(input) {
     var i, key, output = '';
     for (i=0; i<input.length; i++) {
         key = input.substr(i,1).toLowerCase();
-        output += alphabet[key];
+        output += (key in alphabet) ? alphabet[key] : key;
     }
     return output;
 }
