@@ -1,6 +1,6 @@
 var url = require('url'),
 
-port = 1337,
+port = 8080,
 
 alphabet = {
     a: 'Alpha',
